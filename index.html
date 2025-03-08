@@ -5,24 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CountWords</title>
         <link rel="stylesheet" href="style.css">
-        
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Griffy&family=Pacifico&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
     <body>
-        <h1>CountWords</h1>
-        <div class="container">
+        <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
+            <h1 class="mb-4">CountWords</h1>
             <textarea id="inputText" placeholder="Type your text there..."></textarea>
 
-            <div class="results">
+            <div class="results mt-4">
                 <p>Words: <span id="wordCount">0</span></p>
                 <p>Numbers: <span id="numberCount">0</span></p>
                 <p>Chars: <span id="charCount">0</span></p>
                 <p>Sentences: <span id="sentenceCount">0</span></p>
                 <p>Lines: <span id="lineCount">0</span></p>
             </div>
-
         </div>
+        <script src="assets/js/bootstrap.bundle.min.js"></script> 
         <script src="script.js"></script>
     </body>
 </html>
